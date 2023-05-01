@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Glacial Indifference', sans-serif;
+	font-size: 16px;
+}
+
+h1{
+	text-align: center;
+	padding: 2vh;
+	font-weight: lighter;
+}
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8vh;
+	width: 100%;
+}
+
+.card {
+	margin: 0 5%;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	border: 1px solid lightgray;
+	min-height: 33rem;
+	background-color: #fff;	
+transition: 0.3s;
+}
+
+.card:hover{
+	transform: scale(1.06);
+	border: 3px solid  rgba(224, 165, 1, 0.986);
+}
+
+.card img {
+	width: 100%;
+	top: 0;
+	text-align: start;
+	display: flex;
+	justify-content: start;
+	align-items: start;
+}
+
+.card-text {
+	padding: 5%;
+}
+
+.card h3 {
+	color: rgb(255, 187, 0);
+}
+
+.card-btn {
+	text-align: center;
+	background-color: rgb(255, 187, 0);
+	margin-top: 5%;
+	display: block;
+	color: #fff;
+	padding: 4%;
+	width: 10vw;
+	height: 7vh;
+	border-radius: 10px;
+}
+
+.card-btn:hover {
+	color: black;
+}
+
+#section1, #section2, #section3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 10vh;
+	margin-bottom: 8vh;
+}
+
+.img-receita {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: start;
+	width: 100%;
+	margin: 0 6%;
+}
+
+.img-receita img {
+	width: 30%;
+}
+
+.receita-text {
+	margin-top: 2%;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	justify-content: center;
+	height: 100%;
+}
+
+.receita-text p {
+	margin: 5%;
+	font-size: 1.4em;
+}
+
+h2::after,
+h2::before {
+	content: "";
+	background-color: #ffba10;
+	height: 1px;
+	display: inline-block;
+	width: 15%;
+	margin: 0 1%;
+}
+
+article {
+	display: flex;
+	flex-direction: row;
+	margin: 3% 10% 0% 10%;
+	width: 80%;
+}
+
+.receita {
+	width: 60%;
+	float: left;
+	display: block;
+	text-align: start;
+	font-size: 1.2em;
+}
+
+aside {
+	display: block;
+	width: 40%;
+	float: right;
+	font-size:1.1em ;
+}
+
+aside li{
+	margin-top: 1%;
+}
+
+.titulo-receita {
+	font-weight: bold;
+}
+
+.ingredientes {
+	border-top: 2px solid lightgrey;
+
+}
+
+.ingredientes li {
+	list-style: disc;
+	margin-top: 1%;
+}
+
+.ingredientes p {
+	margin-top: 3vh;
+}
+
+ol li {
+	list-style: decimal;
+}
+
+.modo-de-preparo {
+	margin-top: 4vh;
+}
+
+.modo-de-preparo li {
+	margin-top: 2%;
+}
